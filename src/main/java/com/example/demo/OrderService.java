@@ -4,14 +4,20 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class OrderService {
-    private final PaymentService paymentService;
+
+    private PaymentService paymentService;
 
     // Constructor injection for PaymentService
-    public OrderService(PaymentService paymentService){
+    public OrderService(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
 
-    public void placeOder(){
+    public void placeOder() {
         paymentService.processPayment(200.0);
     }
+
+    public void setPaymentService(PaymentService paymentService) {
+        this.paymentService = paymentService;
+    }
+
 }
