@@ -9,6 +9,10 @@ public class OrderService {
 
     private PaymentService paymentService;
 
+    // if we have multiple implementations of PaymentService, we can use @Autowired to inject the desired one
+    // @Autowired
+    // public OderService(PaymentService paymentService, int x){}
+
     // Constructor injection for PaymentService
     public OrderService(PaymentService paymentService) {
         this.paymentService = paymentService;
