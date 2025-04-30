@@ -14,7 +14,7 @@ public class DemoApplication {
 		// injecting the PaymentService using constructor injection
 		// var orderService = new OrderService(new PayPalPaymentService());
 		// orderService.setPaymentService(new StripePaymentService());
-		orderService.placeOder();
+		oderService.placeOder();
 	}
 
 	// the run method returns an object of type ApplicationContext
