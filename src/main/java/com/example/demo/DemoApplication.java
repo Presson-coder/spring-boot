@@ -18,7 +18,7 @@ public class DemoApplication {
 	}
 
 	// the run method returns an object of type ApplicationContext
-	// ApplicationContext is the Spring IoC container - its a storage for our
+    // ApplicationContext is the Spring IoC container - its a storage for our
 	// objects (beans)
 
 }
